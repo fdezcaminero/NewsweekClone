@@ -21,3 +21,12 @@ ul li {
   top: 10px;
   left: 0;
 }
+
+.positionchange {
+  top: 390px;
+  left: 130px;
+}
+
+.color-red {
+  color: red;
+}
