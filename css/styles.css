@@ -2,26 +2,6 @@ ul li {
   display: inline;
 }
 
-
-.genericon-facebook {
-  position: relative;
-}
-
-.genericon-facebook::before {
-  content:"\f082";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-
-  color: #000;
-  font-size: 18px;
-  padding-right: 0.5em;
-  position: absolute;
-  top: 10px;
-  left: 0;
-}
-
 .positionchange {
   top: 390px;
   left: 130px;
@@ -33,4 +13,55 @@ ul li {
 
 .disp-block {
   display: block;
+}
+
+.disp-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.disp-inline {
+  display: inline;
+}
+
+.fa-facebook-square:hover {
+  color: #4267B2
+}
+
+.fa-twitter-square:hover {
+  color: #1da1f2
+}
+
+.fa-instagram:hover {
+  color: #f77737;
+}
+
+.fa-tumblr:hover {
+  color: #36465D;
+}
+
+.fa-linkedin-square:hover {
+  color: #2867b2;
+}
+
+.no-deco {
+  text-decoration: none;
+}
+
+.txt-gray {
+  color: gray;
+}
+
+.hov-icon:hover {
+  text-decoration: none;
+}
+
+.hov-black:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.link-gray {
+  color: gray;
 }
