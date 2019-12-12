@@ -17,7 +17,13 @@ ul li {
 
 .disp-flex {
   display: flex;
+}
+
+.disp-spaceb {
   justify-content: space-between;
+}
+
+.flex-w {
   flex-wrap: wrap;
 }
 
@@ -64,4 +70,13 @@ ul li {
 
 .link-gray {
   color: gray;
+}
+
+.pos-rel {
+  position: relative;
+  left: 50px;
+}
+
+.txt-bold {
+  font-weight: bold;
 }
