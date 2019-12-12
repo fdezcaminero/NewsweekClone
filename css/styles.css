@@ -3,12 +3,12 @@ ul li {
 }
 
 .positionchange {
-  top: 390px;
-  left: 130px;
+  top: 10px;
+  left: -80px;
 }
 
 .color-red {
-  color: red;
+  color: #f72210;
 }
 
 .color-white {
@@ -70,6 +70,10 @@ ul li {
 .hov-black:hover {
   text-decoration: none;
   color: black;
+}
+
+.hov-red:hover {
+  background: #de1f0e;
 }
 
 .link-gray {
