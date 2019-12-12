@@ -11,6 +11,10 @@ ul li {
   color: red;
 }
 
+.color-white {
+  color: white;
+}
+
 .disp-block {
   display: block;
 }
@@ -79,4 +83,20 @@ ul li {
 
 .txt-bold {
   font-weight: bold;
+}
+
+.ul-margdown {
+  margin-bottom: 0;
+}
+
+.bg-lightgray {
+  background: #f4f5f6;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bg-red {
+  background: red;
 }
