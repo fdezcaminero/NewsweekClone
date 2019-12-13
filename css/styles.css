@@ -130,3 +130,7 @@ ul li {
 .no-deco:hover {
   text-decoration: none;
 }
+
+.left-padding-none {
+  padding-left: 0;
+}
