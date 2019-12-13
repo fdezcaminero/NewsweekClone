@@ -108,3 +108,25 @@ ul li {
 .n-flex-w {
   flex-wrap: nowrap;
 }
+
+.pic-text {
+  color: black;
+}
+
+.pic-text:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.fc-black {
+  color: black;
+}
+
+.fc-black:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.no-deco:hover {
+  text-decoration: none;
+}
