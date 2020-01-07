@@ -164,3 +164,7 @@ ul li {
   width: 48%;
 }
 
+.navbar2 {
+  position: relative;
+  z-index: 9999;
+}
