@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 a {
   display: inline-block;
@@ -190,4 +190,8 @@ img {
 
 h6 {
   font-weight: 900;
+}
+
+.height100 {
+  height: 100%;
 }
