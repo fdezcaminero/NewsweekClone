@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 a {
   display: inline-block;
@@ -27,7 +27,7 @@ ul li {
 
 .positionchange {
   top: 10px;
-  left: -80px;
+  left: 50px;
 }
 
 .color-red {
@@ -101,11 +101,6 @@ ul li {
 
 .link-gray {
   color: gray;
-}
-
-.pos-rel {
-  position: relative;
-  left: 50px;
 }
 
 .txt-bold {
@@ -191,10 +186,6 @@ ul li {
 
 img {
   max-width: 100%;
-}
-
-.biggerheight {
-  height: 100px;
 }
 
 h6 {
