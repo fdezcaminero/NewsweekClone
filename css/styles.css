@@ -168,3 +168,23 @@ ul li {
   position: relative;
   z-index: 9999;
 }
+
+.navbar2::before {
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.biggerheight {
+  height: 100px;
+}
