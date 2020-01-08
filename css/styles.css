@@ -172,7 +172,7 @@ ul li {
   z-index: 9999;
 }
 
-.navbar2::before {
+.navbar::before {
   background-color: #f72210;
   border-left: 12px solid white;
   border-top: 13px solid #f72210;
@@ -195,3 +195,4 @@ h6 {
 .height100 {
   height: 100%;
 }
+
