@@ -1,3 +1,11 @@
+/* * {
+  border: 1px solid red;
+} */
+
+a {
+  display: inline-block;
+}
+
 nav {
   background: red;
   overflow: hidden;
@@ -187,4 +195,8 @@ img {
 
 .biggerheight {
   height: 100px;
+}
+
+h6 {
+  font-weight: 900;
 }
