@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://commons.wikimedia.org/wiki/File:Newsweek_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Newsweek_Logo.svg/320px-Newsweek_Logo.svg.png" alt="Logo">
+  </a>
+</p>
+
 <h1 align="center">CLONING NEWSWEEK.COM</h1>
 
 <h3 align="center">7th project. HTML & CSS3 Course. Microverse</h3>
