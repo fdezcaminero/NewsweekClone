@@ -185,6 +185,10 @@ h6 {
   height: 100%;
 }
 
+.width100 {
+  width: 100%;
+}
+
 .liltags {
   background: white;
   color: #f72210;
