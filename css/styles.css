@@ -202,3 +202,11 @@ h6 {
 .tiny-img {
   height: min-content;
 }
+
+.lil-img {
+  width: 150px;
+}
+
+.lil-img a {
+  width: 100%;
+}
