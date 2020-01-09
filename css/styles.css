@@ -202,11 +202,14 @@ h6 {
 
 .liltags {
   color: #f72210;
-  background: whitesmoke;
+  background: white;
   position: relative;
   width: 20%;
-  opacity: 0.5;
+  opacity: 0.9;
   top: -23px;
   text-align: center;
 }
 
+.tiny-img {
+  height: min-content;
+}
