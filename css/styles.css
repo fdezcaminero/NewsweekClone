@@ -115,6 +115,10 @@ ul li {
   background: #f4f5f6;
 }
 
+.bg-gray {
+  background: gray;
+}
+
 .center-text {
   text-align: center;
 }
@@ -194,5 +198,15 @@ h6 {
 
 .height100 {
   height: 100%;
+}
+
+.liltags {
+  color: #f72210;
+  background: whitesmoke;
+  position: relative;
+  width: 20%;
+  opacity: 0.5;
+  top: -23px;
+  text-align: center;
 }
 
