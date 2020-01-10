@@ -1,13 +1,1957 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Document</title>
+
+    <title>Newsweek - News, Analysis, Business, Technology</title>
 </head>
+
 <body>
-    
+
+    <!-- LITTLE NAVBAR -->
+
+    <nav class="fixed-top disp-flex disp-spaceb flex-w p-1">
+        <div>
+            <svg viewBox="0 0 395.6 60" height="36" width="236">
+                <g>
+                    <path fill="white"
+                        d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                    </path>
+                </g>
+            </svg>
+        </div>
+
+        <div>
+            <a class="no-deco color-white" href="https://subscription.newsweek.com/auth">SIGN IN</a>
+            <a class="no-deco p-1 bg-white color-red" href="https://subscription.newsweek.com/auth">SUBSCRIBE ></a>
+
+            <a href="#" class="btn bg-newsweek"><i class="material-icons"> menu </i></a>
+        </div>
+    </nav>
+
+    <!-- END OF LITTLE NAVBAR -->
+
+
+
+
+    <!-- BIG NAVBAR -->
+
+
+    <div class="d-none d-lg-block navbar2 bg-red p-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <span class="text-light d-none d-lg-block col-lg-4">Tue, Jan 07, 2020</span>
+
+
+
+                <div class="navbar-logo col-4 col-sm-6 col-lg-4">
+                    <svg viewBox="0 0 395.6 60" width="100%">
+                        <path fill="#fff"
+                            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="navbar-buttons col-8 col-sm-6 col-lg-4">
+                    <div class="float-right">
+                        <div class="col">
+                            <a href="#" class="text-light font-weight-bold no-deco">SIGN IN</a>
+                            <a href="#" class="btn btn-light text-newsweek font-weight-bold color-red">SUBSCRIBE
+                                &gt;</a>
+                            <a href="#" class="btn bg-newsweek"><i class="material-icons d-lg-none"> menu </i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <nav class="d-none d-lg-block navbar navbar-expand-lg bg-light">
+        <ul class="navbar-nav mr-auto bg-light justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">U.S</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">World</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Business</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Tech &amp; Science</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Culture</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Newsgeek</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Sports</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Health</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Opinion</a></li>
+            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Vantage</a></li>
+            <li class="nav-item">
+                <form class="form-inline my-2 my-md-0"> <input class="form-control" type="text" placeholder="Search"
+                        aria-label="Search"> </form>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BIG NAVBAR ENDS HERE -->
+
+
+    <br><br><br><br>
+
+    <main>
+
+
+        <!-- Top Part: The Three Columns -->
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- COLUMN 1 -->
+
+                <div class="col-md-6 col-lg-4 order-lg-2">
+
+                    <!-- TOP STORY -->
+
+                    <div class="sticky-top">
+
+                        <h3>TOP STORY</h3>
+
+
+                        <div>
+                            <div>
+                                <img src="resources/donald-trump-cabinet-meeting-december-2019.jpg" width="370"
+                                    alt="Donald Trump">
+                                <p class="liltags">U.S.</p>
+                            </div>
+
+                            <div>
+
+                                <h6>Trump's Finances: Will Voters Ever Know The Truth?</h6>
+
+                                <p>Eventually, perhaps, but not by November 3, 2020.</p>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <section class="order-lg-2">
+
+                                <!-- MORE STORIES -->
+
+                                <h5>MORE STORIES</h5>
+
+
+                                <div>
+                                    <img class="float-left" src="resources/mikie-sherrill-backs-impeachment.jpg"
+                                        alt="Mikie Sherrill">
+                                </div>
+
+                                <div>
+
+                                    <h6>Mikie Sherrill of Trump District Is Latest Vulnerable Democrat for
+                                        Impeachment
+                                    </h6>
+
+                                    <p>Sherrill won a district in 2018 that went for Donald Trump in 2016, making
+                                        her
+                                        the
+                                        latest
+                                        vulnerable
+                                        House Democrat to announce support for impeachment articles against the
+                                        president.
+                                    </p>
+
+                                </div>
+
+
+                                <div>
+
+                                    <div>
+                                        <img class="float-left"
+                                            src="resources/joe-biden-trump-impeachment-2020-election.jpg"
+                                            alt="Joe Biden">
+                                    </div>
+
+                                    <div>
+                                        <h6>Biden: No One—Including GOP Senators—Wants Their Kid to Turn Out Like Trump
+                                        </h6>
+
+                                        <p>The former vice president and current 2020 candidate was addressing the issue
+                                            of
+                                            President
+                                            Donald
+                                            Trump's potential acquittal by the Senate at an impeachment trial.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <div>
+                                        <img class="float-left"
+                                            src="resources/mikhail-gorbachev-us-inf-treaty-nuclear-weapons.jpg"
+                                            alt="Mihail Gorbachev">
+                                    </div>
+
+                                    <div>
+                                        <h6>U.S. Is Bent on 'Absolute Military Supremacy,' Mikhail Gorbachev Claims</h6>
+
+                                        <p>"The key to resolving security issues lies not in weapons, but in politics,"
+                                            said
+                                            Gorbachev,
+                                            an
+                                            advocate for nuclear disarmament.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <div>
+                                        <img class="float-left" src="resources/pete-buttigieg.jpg" alt="Pete">
+                                    </div>
+
+                                    <div>
+                                        <h6>Trump Campaign Team Blasts Pete Buttigieg Over 'New Era for Latinos' Plan
+                                        </h6>
+
+                                        <p>Buttigieg "has no clue what it takes to lead and help any communities
+                                            flourish,"
+                                            said
+                                            Trump
+                                            campaign team Deputy Press Secretary Daniel Bucheli.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <div>
+                                        <img class="float-left" src="resources/google.jpg" alt="Google">
+                                    </div>
+
+                                    <div>
+                                        <h6>Google Faces Labor Charges After Firing Worker in Show of 'Unbridled Fury'
+                                        </h6>
+
+                                        <p>"Instead of a joyful celebration of my recent promotion and hard work, I am
+                                            stunned
+                                            and
+                                            hurt
+                                            while I scramble to find a new job and clear my name," said fired worker
+                                            Kathryn
+                                            Spiers.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <img class="float-left"
+                                            src="resources/mitch-mcconnell-lindsey-graham-trump-impeachment-trial.jpg"
+                                            alt="Mitch McConnell">
+                                    </div>
+
+                                    <div>
+                                        <h6>McConnell, Graham 'Trying to Rig' Trump Impeachment Trial: Congresswoman
+                                        </h6>
+
+                                        <p>Representative Zoe Lofgren told MSNBC that it is bad for President Donald
+                                            Trump
+                                            if
+                                            people
+                                            suspect
+                                            his Senate trial is rigged because it would undermine any claim of
+                                            exoneration.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div>
+                                        <img class="float-left"
+                                            src="resources/mitch-mcconnell-senate-donald-trump-impeachment-scared.jpg"
+                                            alt="Senate">
+                                    </div>
+
+                                    <div>
+                                        <h6>GOP Strategy for Trump Impeachment Shows McConnell Is 'Scared': Katyal</h6>
+
+                                        <p>The House is expected to impeach the president in a vote on Wednesday, and
+                                            Senate
+                                            leaders
+                                            are
+                                            now
+                                            wrangling to decide the format of the subsequent </p>
+                                    </div>
+                                </div>
+
+                                <section>
+
+                                    <div>
+
+                                        <div>
+                                            <img class="float-left" src="resources/michael-bloomberg.jpg"
+                                                alt="Michael Bloomberg">
+                                        </div>
+
+                                        <div>
+                                            <h6>Mike Bloomberg Lists Every School Shooting That's Happened Under Trump
+                                            </h6>
+
+                                            <p>The former New York mayor has made gun control one of his key 2020
+                                                campaign
+                                                pledges.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div>
+
+                                        <div>
+                                            <img class="float-left"
+                                                src="resources/airport-travel-suitcase-stock-getty.jpg"
+                                                alt="Airport Travel">
+                                        </div>
+
+                                        <div>
+                                            <h6>Measles Outbreak Update: Officials Warn of Exposure at LAX, Denver
+                                                Airport
+                                            </h6>
+
+                                            <p>Health officials urged unvaccinated members of the public to get their
+                                                shots.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+
+                                        <div>
+                                            <img class="float-left"
+                                                src="resources/boris-johnson-uk-russia-report-interference-election.jpg"
+                                                alt="Boris Johnson">
+                                        </div>
+
+                                        <div>
+                                            <h6>Boris Johnson Clears Release of Russia Report Three Days After Election
+                                                Victory
+                                            </h6>
+
+                                            <p>The British prime minister resisted calls to release the report before
+                                                the
+                                                election
+                                                last
+                                                week.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                            </section>
+
+                            <!-- CULTURE & TRAVEL -->
+
+                            <section class="order-lg-1">
+
+                                <h5>CULTURE &amp; TRAVEL</h5>
+
+                                <div class="row disp-flex disp-spaceb">
+                                    <div class="col-md-6">
+
+                                        <div>
+                                            <img src="resources/cul-map-underwater-banner.jpg" width="220"
+                                                alt="Cul Map">
+                                        </div>
+
+                                        <div>
+                                            <h6>9 Underwater Art Exhibits You Need to Visit</h6>
+
+                                            <p>British eco-artist Jason deCaires Taylor creates undersea worlds that
+                                                blend
+                                                sculpture
+                                                and
+                                                marine
+                                                life,
+                                                creating havens for coral to regenerate and new ecosystems to thrive.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div>
+                                            <img src="resources/hero-pic-italian-hill-towns.jpg" width="220"
+                                                alt="Italian Hill">
+                                        </div>
+
+                                        <div>
+                                            <h6>These Abandoned Italian Hill Towns Are Being Resurrected</h6>
+
+                                            <p>Some of Italy's abundant ghost towns are getting a second chance thanks
+                                                to
+                                                artists
+                                                and
+                                                refugees
+                                                breathing
+                                                new life into these medieval villages.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row disp-flex disp-spaceb">
+                                    <div class="col-md-6">
+
+                                        <div>
+                                            <img src="resources/yasur-vanuatu.jpg" width="220" alt="Yasur">
+                                        </div>
+
+                                        <div>
+                                            <h6>Around the World That Could Erupt at Any Moment</h6>
+
+                                            <p>Despite the dangers, tourists continue to flock to these volatile places
+                                                for
+                                                incredible
+                                                views
+                                                and to take a peek at Mother Nature's temperamental hotspots.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div>
+                                            <img src="resources/travel-influencer-petra.jpg" width="220"
+                                                alt="Travel Influencer">
+                                        </div>
+
+                                        <div>
+                                            <h6>The Most Annoying Travel Trends of the Last Decade</h6>
+
+                                            <p>Travel influencers, basic economy, "travel like a local" and more travel
+                                                trends
+                                                we'd
+                                                love
+                                                to
+                                                see deplane forever.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 order-lg-1">
+                    <!-- FEATURED STORIES -->
+
+                    <div class="sticky-top">
+                        <h3>FEATURED STORIES</h3>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/china-greece-piraeus-nato-port-influence-russia.jpg"
+                                    alt="China Greece">
+
+                                <p class="liltags">WORLD</p>
+                            </div>
+
+                            <div>
+                                <h6>Will China Be NATO's Next Challenge? Alliance Eyes Beijing's Rise</h6>
+
+                                <p>Beset by internal divisions, NATO has been casting around for ways to reinvent the
+                                    70-year-old
+                                    alliance. Could the rising threat of China be the push the transatlantic bloc needs?
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/mormon-church-jesus-christ-latter-day-saints.jpg"
+                                    alt="Mormon Church">
+
+                                <p class="liltags">POLITICS</p>
+                            </div>
+
+                            <div>
+                                <h6>Will China Be NATO's Next Challenge? Alliance Eyes Beijing's Rise</h6>
+
+                                <p>Beset by internal divisions, NATO has been casting around for ways to reinvent the
+                                    70-year-old alliance. Could the rising threat of China be the push the transatlantic
+                                    bloc
+                                    needs?</p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/russia-china-military-joint-drills-east.jpg" alt="Russia Military">
+
+                                <p class="liltags">WORLD</p>
+                            </div>
+
+                            <div>
+                                <h6>How Top Military Powers U.S., Russia, China, More Compare Over Past Decade</h6>
+
+                                <p>Newsweek compares Global Firepower reports from 2009 and 2019 to look at the
+                                    evolution of
+                                    the
+                                    world's most powerful countries as the new decade approaches.</p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/americas-best-stem-high-schools-2020.jpg" alt="STEM">
+                            </div>
+
+                            <div>
+                                <h6>Best STEM High Schools 2020</h6>
+
+                                <p>Newsweek partnered with STEM.org to rank America's Best STEM High Schools. We found
+                                    successful schools in every region of the country.</p>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/l2-resized.jpg" alt="L2 Resized">
+                            </div>
+
+                            <div>
+                                <h6>
+                                    The New Conquest Classic From Longines is Bold Yet Refined
+                                </h6>
+
+                                <p>
+                                    Longines has combined the femininity of materials and dynamic lines to create the
+                                    new
+                                    Conquest Classic. Perfectly suited for the women of today, it remains faithful to
+                                    the
+                                    brand's iconic elegance while offering new dials that mix mother-of-pearl, diamonds
+                                    and
+                                    touches of pink.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/thomas-jefferson-university.jpg" alt="Thomas Jefferson">
+                            </div>
+
+                            <div>
+                                <h6>
+                                    What Can a Career in Architecture Do For You?
+                                </h6>
+
+                                <p>
+                                    Architects do much more than plan and design houses, factories, office buildings,
+                                    and
+                                    other
+                                    structures. You might be surprised how diverse the career can be. Find out more.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/university-glasgow-adam-smith-business-school.jpg"
+                                    alt="University of Glasgow">
+                            </div>
+
+                            <div>
+                                <h6>
+                                    EQUIS Accredited Business Schools 2019
+                                </h6>
+
+                                <p>
+                                    It is important to check whether a school is accredited by a credible global
+                                    accreditation
+                                    body and meets internationally agreed quality standards. EQUIS gives you that piece
+                                    of
+                                    mind.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/holiday-cash-contest.png" alt="Holiday Cash">
+                            </div>
+
+                            <div>
+                                <h6>$1,000 Holiday Cash</h6>
+
+                                <p>Are you one of the lucky winners of our Holiday Cash Sweepstakes? Check the list
+                                    here!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div>
+                                <img src="resources/schochor-federico-staton-p-v3.jpg" alt="Federico Staton">
+                            </div>
+
+                            <div>
+                                <h6>
+                                    If you or a loved one has been injured, you need the best representation. Who can
+                                    champion
+                                    your cause?
+                                </h6>
+
+                                <p>
+                                    Logic dictates that when you need a good personal injury attorney, you’re going to
+                                    be in
+                                    a
+                                    stressful, vulnerable and overwhelming situation. It is vital that you speak to an
+                                    attorney
+                                    who can ensure that you are not taken advantage of. We look at some of the leaders
+                                    in
+                                    the
+                                    field.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- THIRD COLUMN -->
+
+                <div class="col-md-12 col-lg-4 order-lg-3">
+
+                    <div class="sticky-top">
+                        <!-- OPINION -->
+
+                        <div class="container-fluid">
+                            <h5>OPINION</h5>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/charlie-kirk.png" alt="Charlie Kirk">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>Trust Me: Russia Would Never Accept Carter Page as an 'Asset'</h6>
+
+                                    <p>By Scott Olson</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/john-r-deni.jpg" alt="John Deni">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>Aung San Suu Kyi Was My Idol—Now She's Defending My People's Genocide</h6>
+
+                                    <p>By Wai Wai Nu</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/kim-churches.png" alt="Kim Churches">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>Golfers, Beware the Saudi Sportswashing Trap</h6>
+
+                                    <p>By Anthony Harwood</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/marielena-hincapie.png" alt="Marielena Hincapie">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>No, It's Not Too Late to Get the Flu Shot. Do It Now</h6>
+
+                                    <p>By Richard Webby</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/robert-reich.png" alt="Robert Reich">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>Yes, Farmers Need Help. But So Do Hungry Families </h6>
+
+                                    <p>By Marcia L. Fudge</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-2 p-lg-0">
+                                    <img src="resources/marc-schulman.png" alt="Marc Shulman">
+                                </div>
+
+                                <div class="col-10">
+                                    <h6>Will Third Time at the Polls Be the Unlucky One for Netanyahu?</h6>
+
+                                    <p>By Marc Schulman</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- LATEST NEWS -->
+
+                        <div>
+                            <h5>LATEST NEWS</h5>
+
+                            <div>
+                                <img src="resources/cats-francesca-hayward.jpg" width="200" alt="Francesca Hayward">
+
+                                <p>'Cats' Movie Cast: Who Stars in the Film?</p>
+                            </div>
+
+                            <div>
+                                <img src="resources/meghan-mccain-donald-trump-john-dingell-debbie.jpg" width="200"
+                                    alt="Meghan McCain">
+
+                                <p>
+                                    Meghan McCain Rips 'Sick and Cruel' Trump For John Dingell Hell Joke
+                                </p>
+                            </div>
+
+                            <div>
+                                <img src="resources/russian-president-vladimir-putin.jpg" width="200"
+                                    alt="Russian President">
+
+                                <p>
+                                    Putin Backs Trump Over Impeachment Charges He Says Were 'Dreamed Up'
+                                </p>
+                            </div>
+
+                            <div>
+                                <img src="resources/tate-modern.jpg" width="200" alt="Tate Modern">
+
+                                <p>
+                                    6-Year-Old Boy Thrown From 10th-Floor Balcony Speaks For the First Time
+                                </p>
+                            </div>
+
+                            <div>
+                                <img src="resources/hardboiled-eggs.jpg" width="200" alt="Hard Boiled Eggs">
+
+                                <p>
+                                    Hard-Boiled Eggs Linked to Deadly Listeria Outbreak, CDC Says
+                                </p>
+                            </div>
+
+                            <div>
+                                <img src="resources/donald-trump-turkey-armenian-genocide-erdogan-veto.jpg" width="200"
+                                    alt="Turkey Armenian Genocide">
+
+                                <p>
+                                    Trump Is Allowing Turkey's Erdogan a Veto on U.S. Policy, Senator Says
+                                </p>
+                            </div>
+
+                            <div>
+                                <img src="resources/hospital-stock.jpg" width="200" alt="Hospital Stock">
+
+                                <p>
+                                    Colorado Teen In Coma-Like State After Breast Surgery Went Wrong
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- SPONSORED INSIGHT -->
+
+                        <div>
+                            <div>
+
+                                <div>
+                                    <img src="resources/2019-1119-colombia-td-sponsored.jpg" alt="Colombia">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        Colombia: The Time is Now
+                                    </h6>
+
+                                    <p>
+                                        Colombia is living a moment. With President Iván Duque one year into his tenure,
+                                        the
+                                        Andean
+                                        nation is shrugging off its unfair reputation and proving just how vast its
+                                        previously
+                                        untapped potential was.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bg-lightgray">
+                                <h5>SIGN UP FOR OUR NEWSLETTER</h5>
+
+                                <p>SIGN UP</p>
+
+                                <p>Update your preferences</p>
+                            </div>
+
+                            <div>
+
+                                <div>
+                                    <img src="resources/morocco-picture.jpg" alt="Morocco">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        Morocco: The World's Gateway to Africa
+                                    </h6>
+
+                                    <p>
+                                        The Kingdom's reputation as a leading destination for investment and trade
+                                        within
+                                        the
+                                        African continent is supported by highly regarded professional services sectors
+                                        and
+                                        innovative manufacturing industries. Read more.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+
+                                <div>
+                                    <img src="resources/national-museum-qatar.png" alt="National Museum of Qatar">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        Leaders of Qatar
+                                    </h6>
+
+                                    <p>
+                                        Qatar is one of the fast-growing regional economies and among the most promising
+                                        in
+                                        the
+                                        MENA
+                                        region, maintaining balanced growth rates despite various global challenges.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <div>
+                                    <img src="resources/nw-star-wars-banner-sponsored.jpg" alt="Star Wars">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        Star Wars Special Edition
+                                    </h6>
+
+                                    <p>
+                                        As the Skywalker saga comes to a close, celebrate its powerful storyline with
+                                        Newsweek’s
+                                        Special Edition. Featuring behind-the-scenes photos of some of the galaxy’s most
+                                        beloved
+                                        Jedis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+
+                                <div>
+                                    <img src="resources/denla-british-school.jpg" alt="Denla British School">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        Think All International Schools are the Same? Think Again.
+                                    </h6>
+
+                                    <p>
+                                        International schools are not created equal and each one possesses a unique
+                                        blend of
+                                        qualities and educational specializations. Find out which one is best for your
+                                        child.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <img src="resources/americas-most-responsible-companies-2020.jpg" alt="America">
+                                </div>
+
+                                <div>
+                                    <h6>
+                                        America's Most Socially Responsible Companies 2020
+                                    </h6>
+
+                                    <p>
+                                        Newsweek partnered with Statista Inc. to spotlight 300 companies that stand up
+                                        as
+                                        good
+                                        citizens and good neighbors.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- THIRD COLUMN -->
+            </div>
+        </div>
+
+        <!-- In The Magazine -->
+
+        <div class="d-flex justify-content-center">
+            <img class="tiny-img" src="resources/REDN.png" alt="BIG RED N">
+            <h3>IN THE MAGAZINE</h3>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/december-20-2019.jpg" alt="December">
+                    <p>'Impeach': NYT Editorial Board Says Trump Left Congress With No Choice</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/health-care-telemedicine-digital-medicine-tech.jpg"
+                        alt="Health Care">
+                    <p>
+                        Do You Trust Dr. Amazon? Tech Giants Are Eyeing the Health Care Business
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/fe-dramazon-sb-drgoogle-banner.jpg" alt="Fe Dramazon">
+                    <p>Radioactive Dust Released at Nuclear Site Contravened Multiple Regulations</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/fe-jimmywales-01-450700954-banner.jpg" alt="Fe Jimmy Wales">
+                    <p>Wikipedia Founder Jimmy Wales is Taking on Facebook and the Rise of AI</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/per-salary-banner.jpg" alt="Salary">
+                    <p>How Much Do You Make? Here's Why We All Should Answer</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/cul-kaceymusgraves-01-1183498174-banner.jpg"
+                        alt="Kacey Musgraves">
+                    <p>What's Next After Kacey Musgraves' Golden Year?</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/cul-ps-harper-banner.jpg" alt="Harper Banner">
+                    <p>What 'The Good Place' Taught Star William Jackson Harper</p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/helping-hand.jpg" alt="Helping Hand">
+                    <p>A Helping Hand</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editor's Pick -->
+
+        <div class="d-flex justify-content-center">
+            <img class="tiny-img" src="resources/REDN.png" alt="BIG RED N">
+            <h3>EDITOR'S PICK</h3>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/gettyimages-624664028.jpg" alt="Getty">
+                    <p>'Impeach': NYT Editorial Board Says Trump Left Congress With No Choice</p>
+                    <p>
+                        The New York Times Editorial Board penned an op-ed piece backing the impeachment of President
+                        Donald
+                        Trump and condemning Republicans for subverting democracy.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/jaime-harrison-lindsey-graham-sc.jpg" alt="Jaime Harrison">
+                    <p>Poll: Lindsey Graham Nearly Tied With SC Democrat Challenger in GOP State</p>
+                    <p>
+                        Lindsey Graham is statistically tied with Democratic challenger Jaime Harrison, with the staunch
+                        pro-Trump incumbent seeing his favorability ratings plummet among independent voters.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/dounreay.jpg" alt="Doun Reay">
+                    <p>Radioactive Dust Released at Nuclear Site Contravened Multiple Regulations</p>
+                    <p>
+                        The site was operational between 1954 and 1994 but is now in the process of being
+                        decommissioned.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/new-york-city-taxis.jpg" alt="NYC Taxis">
+                    <p>NYC Taxi Commission Issues Advisory to Drivers on Passengers' Pronouns</p>
+                    <p>
+                        The Taxi and Limousine Commission sent an email to drivers reminding them to defer to a
+                        passenger's
+                        preferred pronouns, or use gender-neutral pronouns if the passenger's pronouns are unknown.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/same-sex-wedding.jpg" alt="Sex Wedding">
+                    <p>Hallmark Pulls Gay-Themed Zola Wedding Ad After Pressure From Conservatives</p>
+                    <p>
+                        Two brides kissing each other at the end of a wedding-planning ad was enough for Hallmark to
+                        pull
+                        the plug on its relationship with Zola.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/joe-burrow-lsu.jpg" alt="Joe Burrow">
+                    <p>LSU Quarterback Joe Burrow Wins Heisman Trophy in Record Fashion</p>
+                    <p>
+                        "My journey ... I wouldn't have traded it for anything in the world," Burrow said while fighting
+                        back the tears.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/pokemon-sword-shield-sobble-trailer.jpg"
+                        alt="Pokemon Sword Shield">
+                    <p>'Pokémon Sword and Shield' Leaker Lawsuit Update</p>
+                    <p>
+                        Discord has confirmed they received a subpoena from The Pokémon Company.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <img class="crazywidth" src="resources/louisiana-alligator.jpg" alt="Louisiana Alligator">
+                    <p>Louisiana Sues California for the Right to Sell Alligator Skins</p>
+                    <p>
+                        "The management and protection of private wetlands that is incentivized and funded by the sale
+                        of
+                        American alligator eggs and hides benefits [other] species as well," the state argued in its
+                        complaint.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Slideshows -->
+
+        <div class="d-flex justify-content-center">
+            <img class="tiny-img" src="resources/REDN.png" alt="BIG RED N">
+            <h3>FEATURED SLIDESHOWS</h3>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/lipschutz-living-room-hotel-chelsea.jpg" alt="Living Room">
+                        <p class="pic-text">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</p>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/2018-cup-collection.jpg" alt="2018 Cup Collection">
+                        <p class="pic-text">A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</p>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/holiday-cups-starbucks.jpg" alt="Holiday Cups Starbucks">
+                        <p class="pic-text">What Starbucks Christmas Holiday Drinks Are Available This Year?</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/first-wives-club-pumpkin.jpg" alt="First Wives Club Pumpkin">
+                        <p class="pic-text">Meet the Master Carver Who Turns Pumpkins Into Portraits</p>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/nycc-2019-best-cosplay-augustus-st-cloud.jpg" alt="Best Cosplay">
+                        <p class="pic-text">Our Cosplay Favorites from NYCC 2019</p>
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <a class="no-deco"
+                        href="https://www.newsweek.com/inside-last-bohemian-apartments-manhattans-storied-hotel-chelsea-1473094">
+                        <img src="resources/muir-pass-great-alone.jpg" alt="Muir Pass Great Alone">
+                        <p class="pic-text">The Great Alone: Walking the Pacific Crest Trail</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- U.S. -->
+
+        <div>
+            <p class="color-red txt-bold">
+                U.S.
+            </p>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/kfc.jpg" alt="KFC">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                Wisconsin Woman Called Police to Complain KFC Order Was Wrong
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/skagway-alaska-business-area.jpg" alt="Alaska">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                A Local Alaska Newspaper Company Can Be Yours for Free—With a Catch
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/donald-trump-mitch-mcconnell.jpg"
+                                        alt="Donald Trump and Mitch McConnell">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    Fox News Anchor Confronts Trump Adviser With Senate Oath to Be 'Impartial'
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/army-navy-game-trump.jpg" alt="Army Navy Game">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    Hand Gestures at Army-Navy Game Raises Questions
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/ilhan-omar.jpg" alt="Ilhan Omar">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    Ilhan Omar Says Republicans Making 'Mockery of the Constitution'
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- World -->
+
+        <div>
+            <p class="color-red txt-bold">
+                World
+            </p>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/white-island-volcano.jpg" alt="White Island Volcano">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                First Victim of New Zealand Volcano Named, Described As 'A Beautiful Soul'
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/delhi-air-pollution.jpg" alt="Delhi Air Pollution">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                Rapist Asks to Be Spared Death Penalty, Air Pollution Killing Him Already
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/hotel-four-seasons-lanai-hawaii.jpg" alt="Four Seasons">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    The World's Most Spectacular Hotels
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/us-military-rq4-global-hawk-drone.jpg" alt="US Military">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    Iran Downed This U.S. Drone, Two More Crashed, Navy May Only Have Two Left
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/us-paraguay-presidents-meeting-white-house.jpg" alt="Paraguay">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    U.S. and Russia Build Ties with Latin America As Instability Rocks Region
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business -->
+
+        <div>
+            <p class="color-red txt-bold">
+                Business
+            </p>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/fox-news-carol-roth-millennials.png" alt="Carol Roth">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                Fox News: Millennials Like Socialism Because They Don't Understand History
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/giving-tuesday-charity-donations-taxcut.jpg" alt="Charity Donations">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                Giving Tuesday 2019 : Reports Show Trump Tax Cuts Reduced Individual Donors
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/trump-jr-bookstores-triggered-sales.jpg" alt="Triggered Sales">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    Donald Trump Jr. Claims Airport Bookseller Not Stocking 'Triggered'
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/fox-trump-economy-black-friday.png" alt="Black Friday">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    Fox News Claims 'Trump Economy' Black Friday Ended Liberal Recession Hopes
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/amazon-workers-block-friday-protest-series.jpg"
+                                        alt="Block Friday Protest">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    Amazon Black Friday Protests in Europe: What We Know
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tech & Science -->
+
+        <div>
+            <p class="color-red txt-bold">
+                Tech &amp; Science
+            </p>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/spider-huntsman-wolf-spider-stock-getty.jpg" alt="Stock Getty">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                Huge Nest of Huntsman Spiders Discovered in Box Built for Pygmy Possums
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/phillipines-earthquake.jpg" alt="Phillipines Earthquake">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                Fatal Earthquake Measuring 6.8 Magnitude Strikes Philippines
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/asteroid.jpg" alt="Asteroid">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    2,000-foot-wide Asteroid to Speed Past the Earth Just After Christmas
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/penis-fish-stock-getty.jpg" alt="Penis Fish">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    Thousands of Bizarre Throbbing 'Penis Fish' Wash Up on California Beach
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/ancient-egyptian-head-cone.png" alt="Ancient Egypt">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    Archaeologists Find First Ancient Egyptian Burial Head Cones
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Culture -->
+
+        <div>
+            <p class="color-red txt-bold">
+                Culture
+            </p>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/jumanji-post-credits-scene.jpg" alt="Jumanji">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                'Jumanji the Next Level' Post-Credits Scene Explained
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/expanse-season-4-cast.jpg" alt="Season 4">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                'The Expanse' Season 4 Cast: Who Stars in the Amazon Prime Video Series?
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/hot-cocoa-france-paris.jpg" alt="France, Paris">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    National Cocoa Day 2019: Nestle, Godiva, Hot Cocoa Deals, Discounts
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/how-watch-billboards-2019-women-music.jpg" alt="Women Music">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    How to Watch Billboard's 2019 Women in Music
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/ted-bundy-doc.jpg" alt="Ted Bundy">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    Ted Bundy's Story Takes A Feminist Turn In New Documentary Series
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sports -->
+
+        <div>
+            <p class="color-red txt-bold">
+                Sports
+            </p>
+
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <img src="resources/2020-olympic-games.jpg" alt="2020 Olympics">
+                        </a>
+
+                        <a class="no-deco" href="https://www.youtube.com/watch?v=U0CL-ZSuCrQ">
+                            <p class="txt-bold pic-text">
+                                5 Doping Incidents In Olympic History That Saw Athletes Punished
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <img src="resources/lamar-jackson-baltimore-ravens.jpg" alt="Lamar Jackson">
+                        </a>
+
+                        <a class="no-deco"
+                            href="https://www.newsweek.com/michael-vick-ranks-top-heisman-quarterbacks-their-nfl-careers-1477059">
+                            <p class="txt-bold pic-text">
+                                Punter Stakes 2,800/1 Bet on Luka Doncic, Lamar Jackson to Win MVP Awards
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+                                    <img src="resources/colin-kaepernick-nfl.jpg" alt="Colin Kaepernick">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/nfl-thursday-night-football-baltimore-ravens-new-york-jets-live-stream-tv-channel-watch-1476469">
+
+                                <p class="txt-bold fc-black no-deco">
+                                    NFL Commissioner Says League Has 'Moved On' From Colin Kaepernick
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a
+                                    href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                    <img src="resources/gerrit-cole-houston-astros.jpg" alt="Gerrit Cole Houston">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/how-power-5-commissioners-feel-about-possible-college-football-playoff-expansion-1477029">
+                                <p class="txt-bold fc-black no-deco">
+                                    New York Yankees Favorites for 2020 World Series After Signing Gerrit Cole
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="row disp-flex n-flex-w pb-2">
+                            <div class="lil-img">
+                                <a href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                    <img src="resources/akim-aliu.jpg" alt="Akim Aliu">
+                                </a>
+                            </div>
+
+                            <a class="no-deco"
+                                href="https://www.newsweek.com/wwe-tlc-2019-predictions-who-wins-spoilers-1477015">
+                                <p class="txt-bold fc-black no-deco">
+                                    New York Yankees Favorites for 2020 World Series After Signing Gerrit Cole
+                                </p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Subscribe + Newsletter -->
+
+        <div class="disp-flex justify-content-between flex-w">
+            <div class="col-lg-8">
+                <h3 class="color-red txt-bold">
+                    Subscribe
+                </h3>
+
+                <div class="bg-lightgray row">
+
+                    <div class="col-12 col-lg-6">
+                        <img class="position-relative" src="resources/donaldtrump.jpg" alt="Donald Trump">
+
+                        <img class="position-absolute positionchange" src="resources/december-06-13-2019-cover.jpg"
+                            alt="December">
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <p class="center-text txt-bold">
+                            In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                        </p>
+
+                        <p class="center-text">
+                            All Access + Weekly Delivery.
+                            Choose A Membership That's Perfect for You!
+                        </p>
+
+                        <span class="bg-red color-white txt-bold hov-red">
+                            SUBSCRIBE >
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="disp-block color-red txt-bold">
+                    Newsletter
+                </h3>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 pr-0">
+                        <img class="height100" src="resources/starting5-homepage.png" alt="Homepage">
+                    </div>
+
+                    <div class="col-12 col-md-6 border">
+                        <p class="txt-bold">
+                            The Starting 5
+                        </p>
+
+                        <p>
+                            Take back your inbox. Sign up for our newsletter and start making sense of the world
+                            around
+                            you.
+                        </p>
+
+                        <span class="bg-red color-white txt-bold hov-red">
+                            SIGN UP >
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="mx-lg-5 mt-5">
+        <div class="disp-flex disp-spaceb flex-w border-bottom pb-2">
+            <div class="disp-flex flex-w">
+                <svg viewBox="0 0 395.6 60" height="36" width="236">
+                    <g>
+                        <path fill="red"
+                            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                        </path>
+                    </g>
+                </svg>
+                <p>
+                    &copy; 2019 Newsweek
+                </p>
+            </div>
+
+
+            <div>
+                <ul class="left-padding-none">
+                    <li>
+                        <a class="no-deco link-gray hov-icon" href="https://www.facebook.com/Newsweek" target="_blank">
+                            <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-deco link-gray hov-icon" href="https://twitter.com/Newsweek" target="_blank">
+                            <i class="fa fa-twitter-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-deco link-gray hov-icon" href="https://www.instagram.com/newsweek/"
+                            target="_blank">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-deco link-gray hov-icon" href="https://newsweekscience.tumblr.com/"
+                            target="_blank">
+                            <i class="fa fa-tumblr fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-deco link-gray hov-icon" href="https://www.linkedin.com/company/newsweek/"
+                            target="_blank">
+                            <i class="fa fa-linkedin-square fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="disp-flex">
+            <p class="txt-gray txt-bold">
+                Editions:
+            </p>
+
+            <ul class="list-unstyled ul-margdown">
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        U.S. Edition
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        日本
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        한국
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        Pakistan
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        Polska
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="txt-gray no-deco hov-black">
+                        România
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <ul class="list-unstyled">
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Corrections
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Contact Us
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Editorial Guidelines
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Advertise
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Copyright
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Terms & Conditions
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Privacy Policy
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Cookie Policy
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Terms of Sale
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Archive
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Announcements
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="txt-gray no-deco hov-black">
+                    Consent preferences
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
 </body>
+
 </html>

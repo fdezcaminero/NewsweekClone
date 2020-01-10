@@ -1,0 +1,212 @@
+a {
+  display: inline-block;
+}
+
+nav {
+  background: red;
+  overflow: hidden;
+}
+
+main {
+  margin: auto;
+  max-width: 1210px;
+}
+
+.crazywidth {
+  width: 300px;
+}
+
+ul li {
+  display: inline;
+}
+
+.positionchange {
+  left: 50px;
+  top: 10px;
+}
+
+.color-red {
+  color: #f72210;
+}
+
+.color-white {
+  color: white;
+}
+
+.disp-block {
+  display: block;
+}
+
+.disp-flex {
+  display: flex;
+}
+
+.disp-spaceb {
+  justify-content: space-between;
+}
+
+.flex-w {
+  flex-wrap: wrap;
+}
+
+.disp-inline {
+  display: inline;
+}
+
+.fa-facebook-square:hover {
+  color: #4267b2;
+}
+
+.fa-twitter-square:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #f77737;
+}
+
+.fa-tumblr:hover {
+  color: #36465d;
+}
+
+.fa-linkedin-square:hover {
+  color: #2867b2;
+}
+
+.no-deco {
+  text-decoration: none;
+}
+
+.txt-gray {
+  color: gray;
+}
+
+.hov-icon:hover {
+  text-decoration: none;
+}
+
+.hov-black:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.hov-red:hover {
+  background: #de1f0e;
+}
+
+.link-gray {
+  color: gray;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.ul-margdown {
+  margin-bottom: 0;
+}
+
+.bg-lightgray {
+  background: #f4f5f6;
+}
+
+.bg-gray {
+  background: gray;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-white {
+  background: white;
+}
+
+.n-flex-w {
+  flex-wrap: nowrap;
+}
+
+.pic-text {
+  color: black;
+}
+
+.pic-text:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.fc-black {
+  color: black;
+}
+
+.fc-black:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.no-deco:hover {
+  text-decoration: none;
+}
+
+.left-padding-none {
+  padding-left: 0;
+}
+
+.navbar2 {
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar::before {
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h6 {
+  font-weight: 900;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.liltags {
+  background: white;
+  color: #f72210;
+  opacity: 0.9;
+  position: relative;
+  text-align: center;
+  top: -23px;
+  width: 20%;
+}
+
+.tiny-img {
+  height: min-content;
+}
+
+.lil-img {
+  width: 150px;
+}
+
+.lil-img a {
+  width: 150px;
+}
